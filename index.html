@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+  <title>Dividend</title>
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1 id="title">Financial information</h1>
+  </header>
+  <h3 id="description">Buy a stock</h3>
+<form id ="dividend-form-buy">
+  <div class="form-group">
+    <label for ="date" id="date-label">Date </label>
+    <input required
+      id="date"
+      type="date"
+      min="2020-01-01"
+      max="2220-01-01"
+      class="form-control"
+      name="trip-start"
+      value="2022-09-19">
+    </div>
+  <div class="form-group">
+    <label for="name" id="name-label">Name of Stock</label>
+    <input placeholder="Enter name of Stock" required id = "name"
+    type ="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <p>Country</p>
+              <label for="dropdown">
+              <select id="dropdown" name="dropdown" class="form-control">
+                <option value="" >(select country)</option>
+                <option value="1">Canada</option>
+                <option value="2">US</option>
+                <option value="3">Europe</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+            </div>
+  <div class="form-group">
+    <label for="price" id="price-label">Stock Price</label>
+    <input placeholder="Enter price of Stock" required id = "price"
+    type ="number" class="form-control">
+  </div>
+
+<div class="form-group">
+  <label for ="quantity" id="quantity-label">Quantity </label>
+  <input placeholder="Quantity" required id="quantity" type="number" min="0" max="99" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for ="cost" id="cost-label">Cost </label>
+    <input placeholder="Cost" required id="cost" type="number" min="13" max="99" class="form-control">
+    </div>
+    <input type="submit" value="Submit" id="submit-buy" class="submit-button" />
+</form>
+<h3 id="description">Dividend saving</h3>
+<form id ="dividend-form-saving">
+  <div class="form-group">
+    <label for ="date" id="date-label-saving">Date </label>
+    <input required
+      id="date-saving"
+      type="date"
+      min="2020-01-01"
+      max="2220-01-01"
+      class="form-control"
+      name="trip-start"
+      value="2022-09-19">
+    </div>
+    <div class="form-group">
+      <label for="name" id="name-label-dividend">Name of Stock</label>
+      <input placeholder="Enter name of Stock"
+      required id = "name"
+      type ="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for ="amount-dividend" id="amount-dividend-label">Total amount </label>
+      <input placeholder="Total amount" required id="amount-dividend" type="number" min="0" max="1000" class="form-control">
+      </div>
+      <input type="submit" value="Submit" id="submit-dividend" class="submit-button" />
+</form>
+</div>
+</body>
+<script src="index.js" type="text/javascript"></script>
+</html>
